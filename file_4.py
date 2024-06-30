@@ -9,8 +9,9 @@ def calculate_trip_cost():
     fuel_cost = price_per_liter * liters_used
     total_cost = maintenance_cost + fuel_cost
 
-    driver_cost = total_cost / (num_passengers + 1)  # +1 for the driver
-    passenger_cost = total_cost / num_passengers
+    clean_income = 0.20 * total_cost
+    driver_cost = total_cost / (num_passengers + 1)
+    passenger_cost = (total_cost - clean_income) / num_passengers
 
     print(f"Total trip cost: ${total_cost:.2f}")
     print(f"Driver's cost (including maintenance): ${driver_cost:.2f}")
