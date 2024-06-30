@@ -27,3 +27,5 @@ interpretation = interpret_bmi(bmi_result)
 
 print(f"Your BMI is: {bmi_result:.2f}")
 print(interpretation)
+# Remember to consult a doctor for personalized advice!
+print("Always consult a healthcare professional for interpretation and guidance.")
