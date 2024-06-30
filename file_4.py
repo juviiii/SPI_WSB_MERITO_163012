@@ -1,10 +1,10 @@
 def calculate_trip_cost():
     kilometers = float(input("How many kilometers are you traveling? "))
-    km_per_liter = float(input("What's your vehicle's fuel efficiency (km/L)? "))
+    km_per_100liters = float(input("What's your vehicle's fuel efficiency (km per 100 liters)? "))
     price_per_liter = float(input("What's the price of fuel per liter? $"))
     num_passengers = int(input("How many passengers (including the driver)? "))
 
-    liters_used = kilometers / km_per_liter
+    liters_used = kilometers / km_per_100liters  # Convert to km/L
     maintenance_cost = 0.02 * kilometers
     fuel_cost = price_per_liter * liters_used
     total_cost = maintenance_cost + fuel_cost
