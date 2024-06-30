@@ -20,6 +20,9 @@ def calculate_savings():
 
     print(f"You'll reach $10,000 in savings after {len(months)} months.")
 
+    if monthly_expenses > monthly_income:
+        print("Consider spending less money to improve your savings rate.")
+
     # Plot the savings history
     plt.plot(months, savings_history, marker='o')
     plt.xlabel("Months")
